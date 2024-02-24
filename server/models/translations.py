@@ -16,4 +16,12 @@ class TranslationQuery(BaseModel):
         if v != "Hello. How are you?":
             raise ValueError('Incorrect text to translate. Introduce "Hello. How are you?"')
         return v
-    
+
+class JeringozaInput(BaseModel):
+    value: str
+
+    @validator('value')
+    def text_must_be_alphabetic(cls, v):
+        if not v.isalpha():
+            raise ValueError("Input must be alphabetical characters only, no numbers or special characters permitted.")
+        return v

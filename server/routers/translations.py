@@ -21,3 +21,15 @@ async def translate(
     response = TranslationService.translate(query.lang)
 
     return {"translation": response}
+
+@router.get("/jeringoza")
+async def jeringoza(text: str = Query(..., description="Text to translate to Jeringoza")):
+    # Validate query params
+    try:
+        input = JeringozaInput(value=text)
+    except ValueError as error:
+        raise HTTPException(
+            status_code=422,
+            detail={"error": "ValueError", "message": str(error)}
+        )
+    return {"translation": TranslationService.jeringoza(input.value)}
