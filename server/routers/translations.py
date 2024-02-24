@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Query
-from server.models.translations import TranslationQuery
+from server.models.translations import TranslationQuery, JeringozaInput
 from server.services.translations import TranslationService
 
 router = APIRouter()
