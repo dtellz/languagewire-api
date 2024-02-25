@@ -8,9 +8,11 @@ The LanguageWire API is a simple REST API designed to demonstrate translations i
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
 - [Running the API](#running-the-api)
+- [Running the tests](#running-the-tests)
 - [Usage](#usage)
 - [Architecture](#architecture)
 - [Packaging and running with Docker](#packaging-and-running-with-docker)
+- [Contributing](#contributing)
 
 ## Installation
 
@@ -105,3 +107,7 @@ The API is structured around FastAPI for handling HTTP requests, with a clear se
 docker build -t languagewire-api .
 docker run -d --name languagewire-api-instance -p 8000:8000 languagewire-api
 ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an Issue if you encounter any problems or have any questions.
