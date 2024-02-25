@@ -19,7 +19,7 @@ def test_translate_success():
 def test_translate_unsupported_language():
     response = client.get("/translations/translate", params={"text": "Hello. How are you?", "lang": "klingon"})
     assert response.status_code == 422
-    assert "Unsupported language" in response.json()["message"]
+    assert "Unsupported language" in response.json()["mesage"]
 
 def test_translate_incorrect_text():
     response = client.get("/translations/translate", params={"text": "Goodbye", "lang": "spanish"})
