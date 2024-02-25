@@ -99,6 +99,8 @@ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
+Read more at [http://localhost:8000/docs](http://localhost:8000/docs)
+
 ## Architecture
 
 The API is structured around FastAPI for handling HTTP requests, with a clear separation between the routing layer (routers), data models (models), and business logic (services). This modular architecture ensures ease of maintenance and scalability.
