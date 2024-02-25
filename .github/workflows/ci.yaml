@@ -2,7 +2,8 @@ name: LanguageWire API - CI
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, edited]
+    branches:
+        - master
 
 jobs:
   build:
