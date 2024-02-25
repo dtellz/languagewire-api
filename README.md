@@ -51,6 +51,14 @@ uvicorn server.main:app --reload
 
 The API will be available at [http://localhost:8000](http://localhost:8000)
 
+## Running the tests
+
+Run the tests suite with the following command:
+
+```bash
+pytest
+```
+
 ## Usage
 
 The API provides two main endpoints:
