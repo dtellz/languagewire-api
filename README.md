@@ -1,5 +1,7 @@
 # LanguageWire API
 
+[![LanguageWire API - CI](https://github.com/dtellz/languagewire-api/actions/workflows/ci.yaml/badge.svg)](https://github.com/dtellz/languagewire-api/actions/workflows/ci.yaml)
+
 The LanguageWire API is a simple REST API designed to demonstrate translations into five languages (Spanish, German, French, Italian, Danish) and a fun transformation into Jeringonza. It's built with FastAPI and Python 3.12.2, showcasing REST API development best practices.
 
 ## Table of Contents
