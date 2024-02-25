@@ -49,11 +49,11 @@ The API provides two main endpoints:
 
 ```/translations/translate```
 
-* Accepted Parameters:
+Accepted Parameters:
 
 * text: Fixed phrase "Hello. How are you?"
 
-* lang: Target language code (es for Spanish, de for German, fr for French, it for Italian, da for Danish)
+* lang: Target supported language (spanish, german, french, italian, danish)
 
 Example Request:
 
@@ -67,7 +67,7 @@ curl -X 'GET' \
 
 Transforms any given text into Jeringonza, a playful language game.
 
-* Accepted Parameters:
+Accepted Parameters:
 
 * text: Any text to be transformed into Jeringonza
 
