@@ -9,6 +9,8 @@ on:
 jobs:
   build:
 
+    name: API Tests
+
     runs-on: ubuntu-latest
 
     steps:
