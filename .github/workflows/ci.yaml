@@ -3,10 +3,12 @@ name: LanguageWire API - CI
 on:
   pull_request:
     branches:
-        - master
+      - master
 
 jobs:
   build:
+
+    name: API Tests
 
     runs-on: ubuntu-latest
 
