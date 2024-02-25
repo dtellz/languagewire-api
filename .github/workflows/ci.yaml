@@ -2,7 +2,8 @@ name: LanguageWire API - CI
 
 on:
   pull_request:
-    branches:
+    merge_group:
+      branches:
         - master
 
 jobs:
