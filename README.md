@@ -1,8 +1,16 @@
 # LanguageWire API
 
-## Description
-
 The LanguageWire API is a simple REST API designed to demonstrate translations into five languages (Spanish, German, French, Italian, Danish) and a fun transformation into Jeringonza. It's built with FastAPI and Python 3.12.2, showcasing REST API development best practices.
+
+## Table of Contents
+
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+- [Running the API](#running-the-api)
+- [Usage](#usage)
+- [Architecture](#architecture)
+- [Packaging and running with Docker](#packaging-and-running-with-docker)
 
 ## Installation
 
