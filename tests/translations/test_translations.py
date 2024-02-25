@@ -25,7 +25,7 @@ def test_translate_incorrect_text():
     response = client.get("/translations/translate", params={"text": "Goodbye", "lang": "spanish"})
     assert response.status_code == 422
     assert "Incorrect text to translate" in response.json()["message"]
-
+# should pass
 def test_jeringonza_success():
     response = client.get("/translations/jeringonza", params={"text": "hello"})
     assert response.status_code == 200
