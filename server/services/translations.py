@@ -9,16 +9,16 @@ class TranslationService:
     }
 
     @staticmethod
-    def translate(lang: str):
+    def translate(lang: str) -> str:
         return TranslationService.translations[lang]
     
     @staticmethod
-    def jeringoza(text: str) -> str:
+    def jeringonza(text: str) -> str:
         vowels = "aeiouAEIOU"
-        jeringoza_text = ""
+        jeringonza_text = ""
         for letter in text:
             if letter in vowels:
-                jeringoza_text += f"{letter}p{letter.lower()}"
+                jeringonza_text += f"{letter}p{letter.lower()}"
             else:
-                jeringoza_text += letter
-        return jeringoza_text
+                jeringonza_text += letter
+        return jeringonza_text

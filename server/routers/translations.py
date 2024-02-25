@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Query
-from server.models.translations import TranslationQuery, JeringozaInput
+from server.models.translations import TranslationQuery, jeringonzaInput
 from server.services.translations import TranslationService
 
 router = APIRouter()
@@ -22,14 +22,14 @@ async def translate(
 
     return {"translation": response}
 
-@router.get("/jeringoza")
-async def jeringoza(text: str = Query(..., description="Text to translate to Jeringoza")):
+@router.get("/jeringonza")
+async def jeringonza(text: str = Query(..., description="Text to translate to jeringonza")):
     # Validate query params
     try:
-        input = JeringozaInput(value=text)
+        input = jeringonzaInput(value=text)
     except ValueError as error:
         raise HTTPException(
             status_code=422,
             detail={"error": "ValueError", "message": str(error)}
         )
-    return {"translation": TranslationService.jeringoza(input.value)}
+    return {"translation": TranslationService.jeringonza(input.value)}

@@ -57,7 +57,7 @@ The API provides two main endpoints:
 
 ```/translations/translate```
 
-Accepted Parameters:
+Accepted Query Parameters:
 
 * text: Fixed phrase "Hello. How are you?"
 
@@ -75,7 +75,7 @@ curl -X 'GET' \
 
 Transforms any given text into Jeringonza, a playful language game.
 
-Accepted Parameters:
+Accepted Query Parameters:
 
 * text: Any text to be transformed into Jeringonza
 
@@ -83,7 +83,7 @@ Example Request:
 
 ```bash
 curl -X 'GET' \
-  'http://localhost:8000/translations/jeringoza?text=biblioteca' \
+  'http://localhost:8000/translations/jeringonza?text=biblioteca' \
   -H 'accept: application/json'
 ```
 
