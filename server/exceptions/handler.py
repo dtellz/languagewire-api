@@ -1,7 +1,7 @@
 from fastapi import Request, HTTPException
 from fastapi.responses import JSONResponse
 
-async def http_exception_handler(request: Request, exception: HTTPException):
+async def http_exception_handler(request: Request, exception: HTTPException) -> JSONResponse:
     # Check if this HTTPException was specifically raised due to a ValueError
     if isinstance(exception.detail, dict) and exception.detail.get("error") == "ValueError":
         # Custom formatting for ValueError-triggered HTTPException

@@ -8,7 +8,7 @@ router = APIRouter()
 async def translate(
     text: str = Query(..., description="Text to translate"),
     lang: str = Query(..., description="Language to translate to")
-):
+) -> dict:
     # Validate query params
     try:
         query = TranslationQuery(text=text, lang=lang)
@@ -23,7 +23,9 @@ async def translate(
     return {"translation": response}
 
 @router.get("/jeringonza")
-async def jeringonza(text: str = Query(..., description="Text to translate to jeringonza")):
+async def jeringonza(
+    text: str = Query(..., description="Text to translate to jeringonza"),
+) -> dict:
     # Validate query params
     try:
         input = jeringonzaInput(value=text)
