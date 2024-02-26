@@ -17,7 +17,7 @@ class TranslationQuery(BaseModel):
             raise ValueError('Incorrect text to translate. Introduce "Hello. How are you?"')
         return v
 
-class jeringonzaInput(BaseModel):
+class JeringonzaQuery(BaseModel):
     value: str
 
     @validator('value')
