@@ -35,3 +35,5 @@ def test_jeringonza_failure():
     response = client.get("/translations/jeringonza", params={"text": "hello123"})
     assert response.status_code == 422
     assert "Input must be alphabetical characters only" in response.json()["message"]
+
+#test run
